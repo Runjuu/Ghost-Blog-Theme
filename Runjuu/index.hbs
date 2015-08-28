@@ -1,0 +1,15 @@
+{{!< default}}
+
+<header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+    <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">听，那是一阵风</h1>
+        </div>
+    </div>
+</header>
+
+<main id="post" role="main">
+
+    {{> "loop"}}
+
+</main>
